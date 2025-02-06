@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.header h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.result {
+  font-size: 18px;
+  background-color: #001f00;
+  padding: 10px;
+  border: 1px solid #00ff00;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+.history {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.input-section input {
+  background: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.input-section button {
+  background: #001f00;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #002f00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.buttons-container button {
+  background: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.buttons-container button:hover {
+  background: #002f00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.telegram-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #002f00;
+  color: #00ff00;
+  text-decoration: none;
+  border: 1px solid #00ff00;
+}
+
+.telegram-button:hover {
+  box-shadow: 0 0 5px #00ff00;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff00ff; }
+  50% { text-shadow: -2px -2px #00ffff; }
+  100% { text-shadow: 2px 2px #ff00ff; }
+}
+
+.header h1 {
+  animation: glitch 0.3s infinite alternate;
+}
